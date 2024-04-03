@@ -525,9 +525,9 @@ footer{
 
 .fCompanyPoints{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 20px;
 }
-
 
 .f2{
   text-align: center;
