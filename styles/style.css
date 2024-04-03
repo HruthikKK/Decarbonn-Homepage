@@ -134,18 +134,21 @@ html{
 
 .navBar{
     height: 84px;
+    display: flex;
     background: #133009;
     padding: 0 20px;
+    align-items: center;
 }
 
 .mainLogo{
     display: flex;
-    height: 84px;
+    /* height: 84px; */
     padding: 10px;
     align-items: center;
     justify-content: flex-start;
     gap: 10px;
     cursor: pointer;
+    align-content: center;
 }
 
 #logoText{
@@ -209,7 +212,7 @@ html{
         display: flex;
         justify-content: space-between;
         width: 100%;
-        height: 140px;
+        height: 120px;
         padding: 30px 50px;
     }
 
@@ -374,10 +377,16 @@ html{
   }
   .projectContainer{
     display: flex;
+    /* flex-wrap: wrap; */
     gap: 50px;
+  }
+  .projectContainerSec{
+    min-width: 250px;
+    /* max-width: 400px; */
   }
   .projectHead h2{
     font-size: 28px;
+    padding: 0px 25px;
   }
   .projectContainer{
     padding: 0px 50px;
@@ -408,9 +417,11 @@ footer{
   color: #fff;
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 .f1{
   display: flex;
+  flex-direction: column;
 }
 .fS1{
   flex: 3;
@@ -423,7 +434,7 @@ footer{
   height: 84px;
   /* padding: 10px 0px 10px 40px; */
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 10px;
 }
 
@@ -451,7 +462,8 @@ footer{
   margin-top: 10px;
   display: flex;
   gap: 10px;
-  width: 80%;
+  width: 100%;
+  justify-content: center;
 }
 .fBtn #fBtn1{
   /* flex: 2; */
@@ -477,11 +489,12 @@ footer{
   color: #fff;
 }
 .fConnect{
-  width: 160px;
+  width: 100%;
   margin-top: 20px;
   margin-left: 8px;
   display: flex;
-  gap: 8px;
+  gap: 20px;
+  justify-content: center;
   align-items: center;
 }
 .fConnect a{
@@ -498,12 +511,21 @@ footer{
 .fS2 a{
   text-decoration: none;
   color: #fff;
-  display: block;
+  display: inline;
   font-weight: 250;
   font-size: 14px;
 }
 .fCompany{
   margin-bottom: 10px;
+}
+
+/* .fCompany h3{
+  display: none;
+} */
+
+.fCompanyPoints{
+  display: flex;
+  justify-content: space-evenly;
 }
 
 
@@ -515,9 +537,16 @@ footer{
   font-weight: 300;
 }
 
+.fInit{
+  display: none;
+}
 
 @media screen and (min-width:600px) {
+  footer{
+    text-align: left;
+  }
   .f1{
+    flex-direction: row;
     justify-content: space-evenly;
     padding: 10px;
   }
@@ -561,6 +590,7 @@ footer{
     display: flex;
     gap: 10px;
     width: 80%;
+    justify-content: flex-start;
   }
   .fBtn #fBtn1{
     /* flex: 2; */
@@ -587,6 +617,7 @@ footer{
     margin-left: 8px;
     display: flex;
     gap: 20px;
+    justify-content: flex-start;
     align-items: center;
   }
   .fConnect a{
@@ -626,5 +657,14 @@ footer{
     font-weight: 300;
     font-size: 22px;
   }
+
+  .fInit{
+    display: block;
+  }
+
+  .fCompanyPoints{
+    display: block;
+  }
+
 
 }
