@@ -121,7 +121,7 @@ html{
   }
 
   
-#nav_Btn {
+  #nav_Btn {
     display: block;
     color: #fff;
     position: absolute;
@@ -205,7 +205,113 @@ html{
     display: none;
 }
 
-@media screen and (min-width:600px) {
+@media screen and (min-width:600px){
+  .navBar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 90px;
+    padding: 30px 50px;
+}
+.desk_Nav{
+    display: flex;
+    /* width: 650px; */
+    height: 100%;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;        
+}
+.mob_Nav{
+    display: none;
+}
+
+.mainLogo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* logo */
+
+#logoImg{  
+    width: 35px;
+    top: 0;
+    left: 0;
+}
+#logoText{
+    font-size: 30px;
+    line-height: 90px;
+    left: 100px;
+}
+
+#logoImg img{
+    width: 100%;
+}
+
+.desk_Nav a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+.dropdown {
+float: left;
+overflow: hidden;
+}
+
+.dropdown .dropbtn {
+cursor: pointer;
+font-size: 15px;  
+border: none;
+outline: none;
+color: white;
+/* padding: 14px 16px; */
+background-color: inherit;
+font-family: inherit;
+margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 120px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+float: none;
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+.dropdown-content a:hover {
+background-color: #ddd;
+}
+
+.show {
+display: block;
+}
+
+button#searchNav{
+    color: #fff;
+    background-color: transparent;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+}
+@media screen and (min-width:1001px) {
 
     .desk_Nav{
         display: flex;
@@ -380,6 +486,47 @@ html{
 
 @media screen and (min-width:600px) {
   .mainContainer h1{
+    font-size: 35px;
+  }
+  .mainContainer p{
+    font-size: 16px;
+  }
+  .projectContainer{
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 40px;
+  }
+  .projectContainerSec{
+    min-width: 210px;
+    /* max-width: 400px; */
+  }
+  .projectHead h2{
+    font-size: 22px;
+    padding: 0px 20px;
+  }
+  .projectContainer{
+    padding: 0px 40px;
+  }
+  .infoContainer{
+    padding: 20px;
+  }
+  .infoContainer h2{
+    font-size: 22px;
+  }
+  .infoContainer p{
+    font-size: 16px;
+  }
+  .locationC{
+    font-size: 16px;
+  }
+  .secBtn a{
+    font-size: 16px;
+    padding: 5px 16px;
+  }
+}
+
+@media screen and (min-width:1001px) {
+  .mainContainer h1{
     font-size: 45px;
   }
   .mainContainer p{
@@ -552,6 +699,133 @@ footer{
 }
 
 @media screen and (min-width:600px) {
+  footer{
+    text-align: left;
+  }
+  .f1{
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+  }
+  .fS1{
+    flex: 1;
+    margin-left: 30px ;
+  }
+  .fS2{
+    flex:1;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+  }
+
+  .footerLogo{
+    display: flex;
+    height: 120px;
+    /* padding: 10px 0px 10px 40px; */
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    cursor: pointer;
+
+  }
+  
+  #flogoText{
+    font-size: 28px;
+  }
+  
+  #flogoImg{  
+    width: 35px
+  }
+  #flogoImg img{
+    width: 100%;
+  }
+  .fS1Q{
+    font-size: 20px;
+  }
+  .fBtn{
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    width: 80%;
+    justify-content: flex-start;
+  }
+  .fBtn #fBtn1{
+    /* flex: 2; */
+    background-color: #EBEAEA;
+    font-size: 16px;
+    padding: 8px 13px;
+    border-radius: 18px;
+    width: 220px;
+    /* text-align: center; */
+  }
+  .fBtn button{
+    font: inherit;
+    /* flex: 1; */
+    color: #133009;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #133009;
+    width: 70px;
+  }
+  .fConnect{
+    width: 240px;
+    margin-top: 20px;
+    margin-left: 8px;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .fConnect a{
+    color: #fff;
+    background-color: #133009;
+  }
+  .fConnect a svg{
+    width: 22px;
+    height: 22px;
+  }
+  
+  .fS2{
+    padding: 30px 0px;
+  }
+  .fS2 h3{
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .fS2 a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    font-weight: 250;
+    font-size: 16px;
+  }
+  .fCompany{
+    margin-bottom: 10px;
+  }
+  
+  
+  .f2{
+    text-align: center;
+  }
+  
+  .f2 h5{
+    font-weight: 300;
+    font-size: 18px;
+  }
+
+  .fInit{
+    display: block;
+  }
+
+  .fCompanyPoints{
+    display: block;
+  }
+
+
+}
+@media screen and (min-width:1001px) {
   footer{
     text-align: left;
   }
