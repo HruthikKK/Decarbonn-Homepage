@@ -311,7 +311,7 @@ button#searchNav{
     cursor: pointer;
 }
 }
-@media screen and (min-width:1001px) {
+@media screen and (min-width:1300px) {
 
     .desk_Nav{
         display: flex;
@@ -525,7 +525,7 @@ button#searchNav{
   }
 }
 
-@media screen and (min-width:1001px) {
+@media screen and (min-width:1300px) {
   .mainContainer h1{
     font-size: 45px;
   }
@@ -825,7 +825,7 @@ footer{
   }
 
 }
-@media screen and (min-width:1001px) {
+@media screen and (min-width:1300px) {
   footer{
     text-align: left;
   }
