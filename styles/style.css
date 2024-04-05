@@ -701,6 +701,7 @@ footer{
 @media screen and (min-width:600px) {
   footer{
     text-align: left;
+    padding: 10px 10px;
   }
   .f1{
     flex-direction: row;
@@ -709,18 +710,18 @@ footer{
   }
   .fS1{
     flex: 1;
-    margin-left: 30px ;
+    margin-left: 40px ;
   }
   .fS2{
     flex:1;
     display: flex;
     justify-content: space-evenly;
-    gap: 30px;
+    gap: 40px;
   }
 
   .footerLogo{
     display: flex;
-    height: 120px;
+    height: 100px;
     /* padding: 10px 0px 10px 40px; */
     align-items: center;
     justify-content: flex-start;
@@ -730,11 +731,11 @@ footer{
   }
   
   #flogoText{
-    font-size: 28px;
+    font-size: 32px;
   }
   
   #flogoImg{  
-    width: 35px
+    width: 38px;
   }
   #flogoImg img{
     width: 100%;
@@ -752,11 +753,11 @@ footer{
   .fBtn #fBtn1{
     /* flex: 2; */
     background-color: #EBEAEA;
-    font-size: 16px;
+    font-size: 14px;
     padding: 8px 13px;
     border-radius: 18px;
-    width: 220px;
-    /* text-align: center; */
+    width: 240px;
+    text-align: center;
   }
   .fBtn button{
     font: inherit;
@@ -766,10 +767,10 @@ footer{
     font-size: 16px;
     font-weight: bold;
     color: #133009;
-    width: 70px;
+    width: 80px;
   }
   .fConnect{
-    width: 240px;
+    width: 260px;
     margin-top: 20px;
     margin-left: 8px;
     display: flex;
@@ -787,7 +788,7 @@ footer{
   }
   
   .fS2{
-    padding: 30px 0px;
+    padding: 40px 0px;
   }
   .fS2 h3{
     font-weight: 400;
@@ -812,7 +813,7 @@ footer{
   
   .f2 h5{
     font-weight: 300;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .fInit{
@@ -822,7 +823,6 @@ footer{
   .fCompanyPoints{
     display: block;
   }
-
 
 }
 @media screen and (min-width:1001px) {
