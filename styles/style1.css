@@ -477,6 +477,13 @@ button#searchNav{
   align-items: center;
   justify-content: center;
 }
+.msec1 .navBtn{
+  margin: 24px;
+}
+.msec1 .navBtn a{
+  display: inline;
+  padding:6px 50px;
+}
 .trustSec{
   padding: 20px 0px;
   text-align: center;
@@ -669,10 +676,11 @@ button#searchNav{
     text-align: left;
   }
   .mainContainer h1{
-    font-size: 28px;
+    font-size: 32px;
+    margin-bottom: 15px;
   }
   .mainContainer p{
-    font-size: 16px;
+    font-size: 20px;
   }
   .msec2{
     padding: 100px 350px;
@@ -806,11 +814,13 @@ button#searchNav{
     height: 100vh;
     }
   .mainContainer h1{
-    font-size: 36px;
+    font-size: 42px;
     font-weight: 600;
+    margin-bottom: 20px;
   }
   .mainContainer p{
-    font-size: 20px;
+    font-size: 28px;
+
   }
   .msec2{
     padding: 100px 400px;
