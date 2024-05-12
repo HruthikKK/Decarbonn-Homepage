@@ -8,12 +8,24 @@ nav_Btn.addEventListener('click',() =>{
     else mob_Nav.style.display = "none";
 })
 
+var nav_Bar = document.getElementsByClassName("navBar");
+window.addEventListener("scroll", function() {
+    var navBar = document.getElementsByClassName("navBar")[0]; // Assuming there's only one element with the class "navBar"
+    if (window.scrollY > 0) {
+        // Add a class to change the background color when scrolled
+        navBar.classList.add("scrolled");
+    } else {
+        // Remove the class when scrolled back to the top
+        navBar.classList.remove("scrolled");
+    }
+});
+
+
 //Nav Dropdown
 const dropD_Btn = document.getElementById("dropbtn");
 const dropdownContent = document.getElementById("myDropdown");
 
 dropD_Btn.addEventListener('click', (event) => {
-    console.log("hi");
     dropdownContent.classList.toggle("show");
     event.preventDefault();// Stop event propagation to prevent it from reaching the anchor element
 });
